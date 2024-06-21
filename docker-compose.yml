@@ -45,3 +45,9 @@ services:
       - "traefik.http.routers.wa-vch2-static-https.entrypoints=websecure"
       - "traefik.http.routers.wa-vch2-static-https.tls=true"
       - "traefik.http.routers.wa-vch2-static-https.tls.certresolver=letsencrypt"
+
+
+networks:
+  default:
+    name: gateway
+    external: true
